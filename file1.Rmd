@@ -7,7 +7,7 @@ output: pdf_document
 
 ```{r}
 X <- rnorm(1000,mean = 10, sd = 2)
-Y <- rnorm(1000,mean = 10, sd = 2)
+Y <- rnorm(1000,mean = 15, sd = 2)
 Z <- rnorm(1000,mean = 10, sd = 2)
 
 X+Y+Z
