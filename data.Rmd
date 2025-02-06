@@ -21,6 +21,6 @@ download.file(url, destfile, mode = "wb")
 df <- read_excel(destfile)
 
 # View the first few rows
-df
+hist(df$E)
 
 ```
