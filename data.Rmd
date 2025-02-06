@@ -1,0 +1,26 @@
+---
+title: "Data"
+author: "Jens Christian Sebber"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(readxl)
+
+# Correct raw GitHub URL
+url <- "https://raw.githubusercontent.com/johndeere249/Speciale/main/Inv1423.xlsx"
+
+# Define a local file path
+destfile <- tempfile(fileext = ".xlsx")
+
+# Download the file
+download.file(url, destfile, mode = "wb")
+
+# Read the Excel file
+df <- read_excel(destfile)
+
+# View the first few rows
+df
+
+```
